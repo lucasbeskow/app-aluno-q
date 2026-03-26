@@ -6,8 +6,13 @@
 }
 
 body{
-   padding: 0; 
-   margin: 0;
+    padding: 0; 
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container{
@@ -51,10 +56,7 @@ body{
     align-items: center;
     justify-content: center;
 
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    
 }
 
 .formulario > div{
@@ -104,3 +106,138 @@ body{
 .formulario a:hover{
     text-decoration: underline;
 }
+
+.dashboard{
+    background-color: #ededed;
+}
+
+.dashboard__container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.menu{
+    background-color: #FFFFFF;
+}
+
+.menu__body{
+    display: flex;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+.menu__title{
+    margin: 0;
+    font-size: 18px;
+    color: #0F5830;
+}
+
+.menu__title span{
+    display: block;
+    font-size: 12px;
+    color: #CCCCCC;
+}
+
+.menu__links{
+    margin-left: auto;
+}
+
+.menu__item{
+    display: inline-block;
+    padding: 0 8px;
+    color: #999999;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu__item:hover{
+    text-decoration: underline;
+}
+
+.menu__item--active{
+    color: #0F5830;
+}
+
+.welcome{
+    padding: 40px 0;
+}
+
+.welcome h2{ 
+    margin: 0;
+    font-size: 32px;
+    color: #0F5830;
+}
+
+.welcome p{
+    color: #999999;
+}
+
+
+.card{
+    display: flex;
+    padding: 32px;
+    margin: 30px 0;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+.card__body{
+    flex-grow: 1;
+    padding-right: 50px;
+}
+
+.card__badge{
+    display: inline-block;
+    padding: 8px;
+    background-color: #CCCCCC;
+    color: #0F5830;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.card__title{
+    margin: 0;
+    padding-top: 16px;
+    color: #0F5830;
+}
+
+.card__description{
+    margin: 0;
+    color: #999999;
+}
+
+.card__progress{
+    width: 75%;
+    height: 10px;
+    margin-top: 16px;
+    background-color: #CCCCCC;
+    border-radius: 8px;
+    font-size: 9px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.card__progress div{
+    width: 65%;
+    height: 10px;
+    background-color: #0F5830;
+    border-radius: 8px;
+}
+
+.card__button{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    padding: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background-color: #0F5830;
+}
+
