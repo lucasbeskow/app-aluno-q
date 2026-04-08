@@ -7,6 +7,9 @@
 
     <link href="style.css" rel="stylesheet">
     <link href="mobile.css" rel="stylesheet">
+
+    
+
 </head>
 <body class="dashboard">
 
@@ -25,7 +28,7 @@
     <div class="dashboard__container">
 
         <div class="welcome">
-            <h2>
+            <h2 id="greeting">
                 Boa noite, João
             </h2>
             <p>
@@ -71,7 +74,7 @@
              <div class="card">
                 <div class="card__body">
                     <span class="card__badge">Tempo de estudo</span>
-                    <h3 class="card__title">
+                    <h3 id="tempo" class="card__title">
                         12h 45m
                     </h3>
                     <p class="card__description">Esta semana</p>
@@ -81,7 +84,7 @@
             <div class="card">
                 <div class="card__body">
                     <span class="card__badge">Tarefas pendentes</span>
-                    <h3 class="card__title">
+                    <h3 id="tarefas" class="card__title">
                         2
                     </h3>
                     <p class="card__description">Próximo vencimento em 2 dias</p>
@@ -91,7 +94,7 @@
             <div class="card">
                 <div class="card__body">
                     <span class="card__badge">Discussão com a IA</span>
-                    <h3 class="card__title">
+                    <h3 id="chats" class="card__title">
                         8
                     </h3>
                     <p class="card__description">Tópicos ativos</p>
@@ -103,6 +106,8 @@
        
 
     </div>
+
+    <script src="scripts.js"></script>
 
 </body>
 </html>
