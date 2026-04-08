@@ -15,7 +15,7 @@ function getMsg(){
         return 'Boa tarde';
     } 
     
-    return 'Boa aula (funcionou???)';
+    return 'Boa aula';
 }
 
 const greeting = document.getElementById('greeting');
@@ -41,6 +41,21 @@ const aulas = {
     design: 82
 }
 
-/* adiconar mais um card */
+const progress = document.querySelectorAll('.card__progress div');
+
+progress[0].textContent = aulas.front + '%';
+progress[0].style.width = aulas.front + '%';
+
+progress[1].textContent = aulas.design + '%';
+progress[1].style.width = aulas.design + '%';
+
 /* botão exibir um alert('Alo!?') */
+const btn = document.querySelector('.card__button')
+btn.addEventListener('click', (event) => {
+    alert('Alo!? Botão ' + event.target.textContent);
+})
+
+
+/* adicionar mais um card */
+
 /* botão alterar a % da barra de progresso */
