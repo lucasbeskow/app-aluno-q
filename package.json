@@ -1,0 +1,23 @@
+{
+  "name": "app-aluno-q",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo usado nas aulas de frontend.",
+  "homepage": "https://github.com/lucasbeskow/app-aluno-q#readme",
+  "bugs": {
+    "url": "https://github.com/lucasbeskow/app-aluno-q/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasbeskow/app-aluno-q.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

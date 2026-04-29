@@ -21,6 +21,29 @@ function getMsg(){
 const greeting = document.getElementById('greeting');
 greeting.textContent = `${getMsg()}, ${pessoa.nome}`;
 
+moment.locale('pt-br');
+const dataHoje = document.getElementById('dataHoje');
+dataHoje.textContent = moment().format('D [de] MMMM [de] YYYY (hh:mm:ss a)');
+
+
+
+
+//tarefa vence daqui 5 dias
+const dataVencimento = moment().add(5, 'days');
+
+//tarefa venceu a 5 dias
+//const dataVencimento = moment().subtract(5, 'days');
+
+//calcula diferença entre hoje e o vencimento
+const diasRestantes = dataVencimento.diff(moment(), 'days');
+const vencido = diasRestantes < 0;
+
+//aplique a logica aqui
+//mostrar quando dias esta vencido ou falta para vencer
+//dica: .fromNow()  /  https://momentjs.com/
+
+
+
 
 /* Banners indicadores (Fácil) */
 const indicadores = {
@@ -130,24 +153,24 @@ buscarTitle().then(title => {
 
 // Notification
 // Verifica se o navegador suporta a API de Notificação
-if ("Notification" in window) {
-  // Solicita permissão ao usuário para enviar notificações
-  Notification.requestPermission().then(permission => {
-    if (permission === "granted") {
-      // Se a permissão for concedida, cria uma nova notificação
-      const notificacao = new Notification("Título da Notificação", {
-        body: "Esta é a mensagem da notificação.",
-        icon: "https://placehold.co/64x64/0056b3/ffffff?text=JS"
-      });
+// if ("Notification" in window) {
+//   // Solicita permissão ao usuário para enviar notificações
+//   Notification.requestPermission().then(permission => {
+//     if (permission === "granted") {
+//       // Se a permissão for concedida, cria uma nova notificação
+//       const notificacao = new Notification("Título da Notificação", {
+//         body: "Esta é a mensagem da notificação.",
+//         icon: "https://placehold.co/64x64/0056b3/ffffff?text=JS"
+//       });
       
-      // Adiciona um evento de clique à notificação
-      notificacao.onclick = () => {
-        console.log("A notificação foi clicada!");
-      };
-    } else {
-      console.log("Permissão para notificações negada.");
-    }
-  });
-} else {
-  console.log("Este navegador não suporta a API de Notificação.");
-}
+//       // Adiciona um evento de clique à notificação
+//       notificacao.onclick = () => {
+//         console.log("A notificação foi clicada!");
+//       };
+//     } else {
+//       console.log("Permissão para notificações negada.");
+//     }
+//   });
+// } else {
+//   console.log("Este navegador não suporta a API de Notificação.");
+// }

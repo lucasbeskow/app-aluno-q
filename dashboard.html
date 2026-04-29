@@ -8,8 +8,6 @@
     <link href="style.css" rel="stylesheet">
     <link href="mobile.css" rel="stylesheet">
 
-    
-
 </head>
 <body class="dashboard">
 
@@ -31,6 +29,7 @@
             <h2 id="greeting">
                 Boa noite, João
             </h2>
+            <p id="dataHoje"></p>
             <p>
                 Bem-vindo de volta a sua sessão de estudos focado.
                 Você tem 2 tarefas para essa semana
@@ -103,10 +102,11 @@
 
         </div>
 
-       
-
     </div>
 
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/moment/locale/pt-br.js"></script>
+    
     <script src="scripts.js"></script>
 
 </body>
