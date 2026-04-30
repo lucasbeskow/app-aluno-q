@@ -42,6 +42,17 @@ const vencido = diasRestantes < 0;
 //mostrar quando dias esta vencido ou falta para vencer
 //dica: .fromNow()  /  https://momentjs.com/
 
+const vencimentoEl = document.getElementById('vencimento');
+
+if (vencido) {
+    // Mostra há quantos dias está vencido (fromNow retorna ex: "há 3 dias")
+    vencimentoEl.textContent = `Venceu ${dataVencimento.fromNow()}`;
+    vencimentoEl.style.color = 'red';
+} else {
+    // Mostra quanto tempo falta (to retorna ex: "em 5 dias")
+    vencimentoEl.textContent = `Próximo vencimento ${dataVencimento.fromNow()}`;
+}
+
 
 
 
